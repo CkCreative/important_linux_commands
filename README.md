@@ -75,3 +75,7 @@ sh get-docker.sh
 > Range over all items in a directory and rename them
 
 `ls -v | cat -n | while read n f; do mv -n "$f" "$n.ext"; done`
+
+> Image compression using imagemin
+
+Install imagemin-cli globally then run `imagemin * --out-dir=compressed` to compress all images in the current directory and store them in `/compressed`
