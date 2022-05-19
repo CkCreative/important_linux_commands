@@ -79,3 +79,12 @@ sh get-docker.sh
 > Image compression using imagemin
 
 Install imagemin-cli globally then run `imagemin * --out-dir=compressed` to compress all images in the current directory and store them in `/compressed`
+
+
+
+```psql
+sudo -u postgres psql
+postgres=# create database mydb;
+postgres=# create user myuser with encrypted password 'mypass';
+postgres=# grant all privileges on database mydb to myuser;
+```
