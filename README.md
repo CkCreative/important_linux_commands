@@ -88,3 +88,13 @@ postgres=# create database mydb;
 postgres=# create user myuser with encrypted password 'mypass';
 postgres=# grant all privileges on database mydb to myuser;
 ```
+
+> Check reachability of RDS from inside EC2:
+`nc -zv <hostname> <port>`
+
+> Tunnel to Amazon RDS
+`ssh -i <.pem file> -L 3336:<dbhostname>:3306 <user>@<ip> -N -f`
+
+then 
+
+`mysql -h 127.0.0.1 -P 3336 -u <user> -p`
